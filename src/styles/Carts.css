@@ -1,0 +1,52 @@
+.montain{
+  width: 87%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 14px;
+  filter: brightness(50%);
+  position: relative;
+}
+
+.container_img {
+  margin-top: 4em;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+
+.slogan{
+  position: absolute;
+  text-align: center;
+  top: 4.3em;
+  width: 100%;
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -0.5px 0 #000, -1px 1px 0 #000, 0.1px 1px 0 #000;
+  
+}
+
+.cartsbox{
+  
+  align-items: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  
+
+
+}
+
+.carts{
+  background-color: #F6F6F6;
+  border-radius: 14px;
+  width: 87%;
+  height: 315px;
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+
