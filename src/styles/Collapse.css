@@ -1,25 +1,34 @@
 .collapse-container {
-  width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .collapse-button {
   width: 100%;
-  padding: 10px 15px;
-  background-color: #FF6B6B;
+  background-color: #f56356;
   color: white;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  font-weight: bold;
+  padding: 15px;
+  text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 16px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.collapse-button:hover {
+  background: #FF6060;
+
 }
 
 .collapse-arrow {
+  font-size: 20px;
+  transform: rotate(0deg);
   transition: transform 0.3s ease;
-  font-size: 24px;
 }
 
 .collapse-arrow.open {
@@ -27,14 +36,16 @@
 }
 
 .collapse-content {
-  background-color: #F6F6F6;
+  background-color: #ffe5e5;
+  color: #333;
+  padding: 0 15px;
+  border-radius: 0 0 5px 5px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  border-radius: 0 0 5px 5px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
 }
 
 .collapse-content.open {
-  
-  padding: 20px;
+  max-height: 500px; /* Ajuste cette valeur en fonction de ton contenu */
+  padding: 15px;
 }

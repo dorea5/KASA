@@ -4,8 +4,10 @@
   object-fit: cover;
   border-radius: 14px;
   display: flex;
+  margin-top: 2em;
+  filter: brightness(65%);
   
-  ;
+  
 }
 
 .about-pic-container{
@@ -14,4 +16,18 @@
   object-fit: cover;
   justify-content: center;
   align-items: center;
+}
+
+.container-all-menu{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container-menu{
+  width: 55%;
+  display: flex;
+  margin-top: 4em;
+  
 }
