@@ -8,15 +8,15 @@ function Banner() {
     <header className="banner">
       <div className="banner-content">
         <div className="logo">
-          <img src={Logo} className="App-Logo" alt="Logo" />
+          <img src={Logo} className="App-Logo" alt="LogoKasa" />
         </div>
         <nav className="navigation">
           <ul>
             <li>
-              <Link to="/">Accueil</Link>
+              <Link to="/App">Accueil</Link>
             </li>
             <li>
-              <Link to="/about">À Propos</Link>
+              <Link to="/AboutPage">À Propos</Link>
             </li>
           </ul>
         </nav>

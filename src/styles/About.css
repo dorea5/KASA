@@ -1,0 +1,17 @@
+.about-pic{
+  width: 87%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: flex;
+  
+  ;
+}
+
+.about-pic-container{
+  width: 100%;
+  display: flex;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+}

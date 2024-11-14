@@ -1,0 +1,44 @@
+.apartment-card img {
+  width: 23.5em;
+  height: 23em;
+  border-radius: 6px;
+  margin-bottom: 4em;
+  object-fit: cover;
+  position:relative
+  
+}
+
+.apartment-card{
+  display: flex;
+}
+
+.content-container{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.apartment-card h3  {
+  font-size: 0.8em;
+  font: Montserrat;
+  flex-wrap: wrap;
+  position: absolute;
+  margin-top: 23em;
+  width: 10em;
+  color: white;
+  padding: 1em;
+  text-shadow: -0.1px -0.1px 0 #000, 0.1px -0.1px 0 #000, -0.2px 0.2px 0 #000, 0.1px 1px 0 #000;
+}
+
+.apartments{
+  display: flex;
+  width: 92%;
+}
+
+.apartment-list{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-top: 3em;
+
+}
