@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Collapse.css";
+import Arrow from "../assets/Arrow.png";
 
 const Collapse = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,9 +16,11 @@ const Collapse = ({ title, content }) => {
         onClick={toggleCollapse}
       >
         {title}
-        <span className={`collapse-arrow ${isOpen ? "open" : ""}`}>
-          &#x2304;
-        </span>
+        <img
+          src={Arrow}
+          alt="Arrow Icon"
+          className={`collapse-arrow ${isOpen ? "open" : ""}`}
+        />
       </button>
       <div className={`collapse-content ${isOpen ? "open" : ""}`}>
         {content}

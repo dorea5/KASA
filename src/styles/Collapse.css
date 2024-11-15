@@ -36,7 +36,7 @@
 }
 
 .collapse-content {
-  background-color: #ffe5e5;
+  background-color: #F6F6F673;
   color: #333;
   padding: 0 15px;
   border-radius: 0 0 5px 5px;
@@ -48,4 +48,15 @@
 .collapse-content.open {
   max-height: 500px; /* Ajuste cette valeur en fonction de ton contenu */
   padding: 15px;
+}
+
+.collapse-arrow {
+  width: 20px;
+  height: 20px;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.collapse-arrow.open {
+  transform: rotate(180deg);
 }
