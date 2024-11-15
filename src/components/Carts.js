@@ -1,7 +1,7 @@
 import Montain from "../assets/Montain.svg";
 import "../styles/Carts.css";
 import "../styles/Cart.css";
-import { ApartmentsArray } from "./Apartments";
+import data from "../data.json";
 import ApartmentList from "./Apartments";
 
 function Carts() {
@@ -15,7 +15,7 @@ function Carts() {
       <div className="cartsbox">
         <div className="carts">
           <div className="apartments">
-            <ApartmentList apartments={ApartmentsArray} />
+            <ApartmentList apartments={data} />
           </div>
         </div>
       </div>
