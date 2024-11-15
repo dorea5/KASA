@@ -13,7 +13,7 @@ function Banner() {
         <nav className="navigation">
           <ul>
             <li>
-              <Link to="/App">Accueil</Link>
+              <Link to="/">Accueil</Link>
             </li>
             <li>
               <Link to="/AboutPage">À Propos</Link>

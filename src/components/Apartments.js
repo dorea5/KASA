@@ -582,17 +582,19 @@ export const ApartmentsArray = [
   },
 ];
 
-function ApartmentList(props) {
-  const apartments = props.apartments;
-  const apartmentItems = apartments.map((apartment) => (
-    <ApartmentCard
-      key={apartment.id}
-      title={apartment.title}
-      cover={apartment.cover}
-    />
-  ));
-
-  return <div className="apartment-list">{apartmentItems}</div>;
+function ApartmentList({ apartments }) {
+  return (
+    <div className="apartment-list">
+      {apartments.map((apartment) => (
+        <ApartmentCard
+          key={apartment.id}
+          id={apartment.id}
+          title={apartment.title}
+          cover={apartment.cover}
+        />
+      ))}
+    </div>
+  );
 }
 
 export default ApartmentList;
