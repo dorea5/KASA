@@ -3,8 +3,9 @@
 
 .apartment-details {
   margin: 4em;
-  margin-top: 2em;
+  margin-top: 0em;
   padding: 20px;
+  padding-top: 0;
 }
 
 /* Image du logement */
@@ -19,7 +20,6 @@
 .apartment-details h2 {
   display: flex;
   font-family: Montserrat;
-  padding-top: 0.7em;
   font-size: 2.7em;
   font-weight: 100;
   width: 100%;
@@ -81,9 +81,8 @@
 .host-profile {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 19px;
   margin-bottom: 22px;
-  margin-top: 1.2em;
 }
 
 .host-picture {
@@ -94,7 +93,7 @@
 }
 
 .host-name {
-  font-weight: bold;
+  font-weight: 400;
   width: 4em;
   font-size: 1.5em;
   color: #ff6060;
