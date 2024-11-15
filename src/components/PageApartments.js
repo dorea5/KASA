@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import Banner from "./Banner";
 import Footer from "./Footer";
 import "../styles/PageApartments.css";
+import Collapse from "./Collapse";
 
 function PageApartments() {
   const { id } = useParams();
@@ -31,17 +32,25 @@ function PageApartments() {
             </span>
           ))}
         </div>
-        <div className="description">
-          <h3>Description</h3>
-          <p>{apartment.description}</p>
-        </div>
-        <div className="equipments">
-          <h3>Équipements</h3>
-          <ul>
-            {apartment.equipments.map((equipment, index) => (
-              <li key={index}>{equipment}</li>
-            ))}
-          </ul>
+        <div className="collapse-sections">
+          <div className="collapse-item">
+            <Collapse
+              title="Description"
+              content={<p>{apartment.description}</p>}
+            />
+          </div>
+          <div className="collapse-item">
+            <Collapse
+              title="Équipements"
+              content={
+                <ul>
+                  {apartment.equipments.map((equipment, index) => (
+                    <li key={index}>{equipment}</li>
+                  ))}
+                </ul>
+              }
+            />
+          </div>
         </div>
       </div>
       <Footer />
