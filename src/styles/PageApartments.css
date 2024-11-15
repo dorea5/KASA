@@ -3,6 +3,7 @@
 
 .apartment-details {
   margin: 4em;
+  margin-top: 2em;
   padding: 20px;
 }
 
@@ -18,13 +19,13 @@
 .apartment-details h2 {
   display: flex;
   font-family: Montserrat;
-  justify-content: space-between;
-  align-items: center;
+  padding-top: 0.7em;
   font-size: 2.7em;
   font-weight: 100;
+  width: 100%;
   color: #ff6060;
   margin: 0;
-  margin-top: 1em;
+  
 }
 
 
@@ -36,7 +37,11 @@
 
 
 
-
+.column{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
 
 /* Tags */
@@ -58,13 +63,61 @@
   font-family: Montserrat;
 }
 
+.section-hote{
+ 
+  display: flex;
+}
+
+.aline{
+  display: flex;
+
+}
+.host-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.host-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+  margin-top: 1.2em;
+}
+
+.host-picture {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.host-name {
+  font-weight: bold;
+  width: 4em;
+  font-size: 1.5em;
+  color: #ff6060;
+}
+
+.rating {
+  display: flex;
+  gap: 5px;
+}
+
+.star {
+  width: 1.7em;
+  height: 1.7em;
+  padding-left: 0.5em;
+}
+
 
 
 .collapse-content ul {
   list-style-type: none; 
   font-family: Montserrat;
   padding-left: 0;
-  padding-bottom: 1em;
+  
   
   
    
