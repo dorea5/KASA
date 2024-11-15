@@ -1,6 +1,6 @@
 import data from "../data.json";
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Banner from "./Banner";
 import Footer from "./Footer";
 import "../styles/PageApartments.css";
@@ -11,7 +11,14 @@ import Carousel from "./Carousel";
 
 function PageApartments() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const apartment = data.find((item) => item.id === id);
+
+  // Rediriger vers la page 404 si l'appartement n'est pas trouvé
+  if (!apartment) {
+    navigate("/404", { replace: true });
+    return null;
+  }
 
   if (!apartment) {
     return <div>Logement introuvable</div>;

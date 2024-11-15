@@ -25,6 +25,7 @@ export default function MyApp() {
         <Route path="*" element={<Error404 />} />
         <Route path="/apartment/:id" element={<PageApartments />} />
         <Route path="/AboutPage" element={<AboutPage />} />
+        <Route path="/404" element={<Error404 />} />
       </Routes>
     </div>
   );
