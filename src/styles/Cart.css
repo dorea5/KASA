@@ -4,7 +4,8 @@
   border-radius: 6px;
   margin-bottom: 4em;
   object-fit: cover;
-  position:relative
+  position:relative;
+  cursor: pointer;
   
 }
 
@@ -20,6 +21,7 @@
 
 .apartment-card h3  {
   font-size: 0.8em;
+  cursor: pointer;
   font: Montserrat;
   flex-wrap: wrap;
   position: absolute;

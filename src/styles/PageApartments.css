@@ -30,9 +30,7 @@
 
 .apartment-details p {
   font-family: Montserrat;
-  font-size: 14px;
-  font-weight:500;
-  margin-bottom: 1em;
+
 
 }
 
@@ -62,9 +60,15 @@
 
 
 
-
-
-
+.collapse-content ul {
+  list-style-type: none; 
+  font-family: Montserrat;
+  padding-left: 0;
+  padding-bottom: 1em;
+  
+  
+   
+}
 
 .collapse-sections {
   display: flex;
