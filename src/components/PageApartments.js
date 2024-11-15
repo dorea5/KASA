@@ -7,6 +7,7 @@ import "../styles/PageApartments.css";
 import Collapse from "./Collapse";
 import StarEmpty from "../assets/StarEmpty.png";
 import StarFilled from "../assets/StarFilled.png";
+import Carousel from "./Carousel";
 
 function PageApartments() {
   const { id } = useParams();
@@ -16,7 +17,7 @@ function PageApartments() {
     return <div>Logement introuvable</div>;
   }
 
-  // Fonction pour afficher les étoiles en fonction de la note
+  // Fonction pour afficher les étoiles
   const renderStars = (rating) => {
     const stars = [];
     for (let i = 0; i < 5; i++) {
@@ -35,14 +36,19 @@ function PageApartments() {
   return (
     <div>
       <Banner />
-      <div className="apartment-details">
-        {/* Image principale */}
+
+      {/* Carrousel d'images */}
+      {apartment.pictures.length > 1 ? (
+        <Carousel pictures={apartment.pictures} />
+      ) : (
         <img
-          className="apartment-image"
-          src={apartment.cover}
+          className="single-image"
+          src={apartment.pictures[0]}
           alt={apartment.title}
         />
+      )}
 
+      <div className="apartment-details">
         {/* Informations sur le logement */}
         <div className="apartment-header">
           <div className="apartment-info">
