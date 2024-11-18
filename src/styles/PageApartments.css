@@ -132,16 +132,6 @@
   flex: 1;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .collapse-sections {
-    flex-direction: column;
-  }
-}
-
-
-/* Banniere */
-
 
 /* Footer */
 .footer {
@@ -153,18 +143,79 @@
   font-size: 14px;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .apartment-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
-  .apartment-title {
-    font-size: 28px;
-  }
+/* Responsive Design */
 
-  .apartment-location {
-    font-size: 16px;
+
+@media (max-width: 700px){
+  .collapse-sections {
+    flex-direction: column;}
+  
+  .aline{
+    display: ruby;
   }
+  
+  .apartment-details {
+    margin: 1em;
+    margin-top: 0em;
+    padding: 20px;
+    padding-top: 0;
+}
+
+
+.apartment-details h2 {
+  display: flex;
+  font-family: Montserrat;
+  font-size: 1.2em;
+  font-weight: 100;
+  width: 100%;
+  color: #ff6060;
+  margin: 0;}
+
+  .host-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 11px;
+    width: 100%;
+    justify-content: space-between;}
+
+    .host-profile {
+      display: flex;
+      align-items: end;
+      gap: 0;
+    }
+
+    .host-name {
+      font-weight: 400;
+      width: 4em;
+      font-size: 1.5em;
+      color: #ff6060;}
+
+      .host-picture {
+        width: 5em;
+        height: 5em;
+        border-radius: 50%;
+        object-fit: cover;
+        display: flex;
+      }
+
+      .rating {
+        display: flex;
+        gap: 5px;}
+
+.star {
+    width: 1.7em;
+    height: 1.7em;
+    padding-left: 0.5em;}
+
+    .tag {
+      background-color: #ff6060;
+      color: white;
+      padding: 4px 9px;
+      border-radius: 10px;
+      font-family: Montserrat;
+      font-size: 10px;
+      font-weight: bold;
+      font-family: Montserrat}
 }

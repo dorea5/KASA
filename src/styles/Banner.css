@@ -36,3 +36,71 @@
 .navigation a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 376px) {
+  
+.App-Logo{
+  display: flex;
+  width: 140px;
+} 
+
+.banner {
+    background-color: #fff;
+    padding-top: 2em;
+    padding: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+    margin: 1em;
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-left: 2em;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: inherit;
+
+}
+
+
+
+
+
+}
+
+@media (min-width: 350px) and (max-width: 750px){
+  
+  .App-Logo{
+    display: flex;
+    width: 120px;
+    margin-right: 0em;
+  } 
+
+  .banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+  }
+
+  .banner {
+    background-color: #fff;
+    padding-left: 0.5em;
+    padding-right: 2em;
+    margin: 1em;}
+  
+  .navigation ul {
+    gap: 2em
+  }
+  
+  .navigation a {
+    font-size: 0.8em;
+  }
+
+
+}

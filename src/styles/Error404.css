@@ -33,3 +33,17 @@
 
 }
 
+
+@media (max-width: 700px){
+.error-message {
+  font-size: 1.2rem;
+  color: #f56356;
+  width: 55%;
+  margin: 27px 0;
+}
+.error-code {
+    font-size: 8rem;
+    color: #f56356;
+    margin: 0;
+    font-family: Montserrat;}
+}

@@ -16,7 +16,7 @@ function Banner() {
               <Link to="/">Accueil</Link>
             </li>
             <li>
-              <Link to="/AboutPage">À Propos</Link>
+              <Link to="/AboutPage">A Propos</Link>
             </li>
           </ul>
         </nav>
