@@ -12,13 +12,16 @@ import Carousel from "./Carousel";
 function PageApartments() {
   const { id } = useParams();
   const navigate = useNavigate();
+
   const apartment = data.find((item) => item.id === id);
 
   // Rediriger vers la page 404 si l'appartement n'est pas trouvé
-  if (!apartment) {
-    navigate("/404", { replace: true });
-    return null;
-  }
+
+  React.useEffect(() => {
+    if (!apartment) {
+      navigate("/404", { replace: true }); // Remplacement dans l'historique
+    }
+  }, [apartment, navigate]);
 
   if (!apartment) {
     return <div>Logement introuvable</div>;
